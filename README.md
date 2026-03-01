@@ -1,2 +1,2 @@
 # mutex-redis
-bamgoo redis mutex driver.
+infrago redis mutex driver.

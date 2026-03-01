@@ -1,4 +1,4 @@
-module github.com/bamgoo/mutex-redis
+module github.com/infrago/mutex-redis
 
 go 1.25.3
 

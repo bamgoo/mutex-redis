@@ -6,8 +6,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/bamgoo/bamgoo"
-	"github.com/bamgoo/mutex"
+	"github.com/infrago/infra"
+	"github.com/infrago/mutex"
 	"github.com/redis/go-redis/v9"
 )
 
@@ -29,7 +29,7 @@ type (
 )
 
 func init() {
-	bamgoo.Register("redis", &redisDriver{})
+	infra.Register("redis", &redisDriver{})
 }
 
 func (d *redisDriver) Connect(inst *mutex.Instance) (mutex.Connection, error) {
